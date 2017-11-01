@@ -32,6 +32,7 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     // Initialization code
 }
 
@@ -66,7 +67,7 @@
     }
     else {
         _titleLabel.backgroundColor = [UIColor clearColor];
-        _titleLabel.textColor = WAVE_BLUE;
+        _titleLabel.textColor = [UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f];
     }
 }
 

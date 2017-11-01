@@ -10,6 +10,8 @@
 #import "EGORefreshTableHeaderView.h"
 #import "EGORefreshTableFooterView.h"
 
+#define STATS_AND_NAVI_HEIGHT       64
+
 @protocol DQRefreshTableViewControllerDelegate <NSObject>
 
 @required

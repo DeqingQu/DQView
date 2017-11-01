@@ -41,7 +41,7 @@
         //  UI
         _button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         _button.backgroundColor = [UIColor clearColor];
-        [_button setTitleColor:WAVE_BLUE forState:UIControlStateNormal];
+        [_button setTitleColor:[UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
         [_button addTarget:self action:@selector(onButtonPressed) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_button];
         

@@ -38,6 +38,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.delegate = self;
+    self.allowLoadMore = YES;
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -198,13 +199,30 @@
 #pragma Private Methods
 - (void)refreshView
 {
+    [_createrArray removeAllObjects];
+    [_membersArray removeAllObjects];
+    
     [_createrArray addObject:@"Creator"];
-    [_membersArray addObject:@"Member No1"];
-    [_membersArray addObject:@"Member No2"];
+    for (NSInteger i=0; i<10; i++) {
+        [_membersArray addObject:[NSString stringWithFormat:@"Member No%ld", i+1]];
+    }
     
     //  刷新table
     [self.tableView reloadData];
+    [self finishReloadingData];
+}
+
+- (void)getMoreView {
     
+    [super getMoreView];
+ 
+    [_createrArray addObject:@"Creator"];
+    for (NSInteger i=0; i<2; i++) {
+        [_membersArray addObject:[NSString stringWithFormat:@"Member No%ld", i+10]];
+    }
+    
+    //  刷新table
+    [self.tableView reloadData];
     [self finishReloadingData];
 }
 

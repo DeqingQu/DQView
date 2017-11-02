@@ -33,11 +33,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.delegate = self;
-    self.allowLoadMore = YES;
+//    self.allowLoadMore = YES;
     
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.tableView.tableFooterView = [[UIView alloc] init];
     self.tableView.backgroundColor = [UIColor colorWithWhite:237.0f/255.0f alpha:1.0f];
     self.tableView.separatorColor = [UIColor colorWithWhite:237.0f/255.0f alpha:1.0f];
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
@@ -164,7 +161,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 30.0f;
+    return 60.0f;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

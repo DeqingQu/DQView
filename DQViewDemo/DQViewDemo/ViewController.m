@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DQNaviDropdownView.h"
+#import "NewViewController.h"
 
 #define WAVE_BLUE                   [UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f]
 
@@ -27,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+
     //  delegate and other setup
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -49,11 +50,10 @@
     _createrArray = [[NSMutableArray alloc] initWithCapacity:0];
     
     //  View Init
-    //  自定义导航栏
-    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
-    [self.navigationController.navigationBar setTintColor:WAVE_BLUE];
+    //  customize nav bar
+//    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+//    [self.navigationController.navigationBar setTintColor:WAVE_BLUE];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObject:WAVE_BLUE forKey:NSForegroundColorAttributeName]];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navi_bar_create"] style:UIBarButtonItemStyleDone target:self action:@selector(onCreateDynamic)];
     
     _naviView = [[DQNaviDropdownView alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.navigationBar.bounds.size.height)withDropdownArray:_titleArray];
     _naviView.delegate = self;
@@ -167,7 +167,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
     if ([_membersArray count] == 0 && [_createrArray count] == 0) {
         return;
     }
@@ -181,7 +180,10 @@
         numberToShow = [_membersArray objectAtIndex:indexPath.row];
     }
     
-    NSLog(@"%@", numberToShow);
+    NSLog(@"Show line: %@", numberToShow);
+    
+    NewViewController *vc = [[NewViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

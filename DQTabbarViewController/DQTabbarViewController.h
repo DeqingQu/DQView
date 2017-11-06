@@ -26,14 +26,6 @@
  */
 - (id)initWithViewControllers:(NSArray *)controllers withTabbarImages:(NSArray *)images withCenterImage:(NSString *)centerImageName withPopupViewControllers:(NSArray *)popupControllers withPopupImages:(NSArray *)popupImages;
 
-
-/*
- 设置未读消息条数
- @param:index           选中item的index
- @param:unread          未读条数
- */
-- (void)setUnreadCount:(int)unread AtIndex:(int)index;
-
 /*
  跳转到第index个页面的root页面
  */

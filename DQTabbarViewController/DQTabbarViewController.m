@@ -52,10 +52,6 @@
     // Do any additional setup after loading the view.
     
     ///////////////////////////////////////
-    //  自定义状态栏
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    
-    ///////////////////////////////////////
     //  ContainerView
     _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [self.view addSubview:_containerView];
@@ -225,11 +221,6 @@
 }
 
 #pragma mark Others
-
-- (void)setUnreadCount:(int)unread AtIndex:(int)index {
-
-    [_tabbarView setUnreadCount:unread AtIndex:index];
-}
 
 - (void)jumpToRootViewControllerAtIndex:(int)index {
     

@@ -78,12 +78,4 @@
  */
 - (void)setSelectPopupButton:(int)index;
 
-/*
- 设置未读消息条数
- @param:index           选中按钮的index(除去中间按钮)
- @param:unread          未读条数
- */
-- (void)setUnreadCount:(int)unread AtIndex:(int)index;
-
-
 @end

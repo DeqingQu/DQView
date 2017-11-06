@@ -7,10 +7,13 @@
 //
 
 #import "DQTabbarView.h"
-#import "M13BadgeView.h"
 
 #define DQ_TABBAR_BUTTON_TAG        1000
 #define DQ_TABBAR_POPUP_BUTTON_TAG  2000
+
+#define TABBAR_BUTTON_COUNT         5
+#define STATS_AND_NAVI_HEIGHT       64
+#define TABBAR_HEIGHT               48
 
 static const CGFloat kAngleOffset = M_PI_2 / 2;
 static const CGFloat kSphereLength = 90;
@@ -21,7 +24,6 @@ static const float kSphereDamping = 0.3;
 @property (nonatomic, assign) int buttonCount;
 @property (nonatomic, assign) int popupButtonCount;
 @property (nonatomic, strong) NSMutableArray *buttonArray;
-@property (nonatomic, strong) NSMutableArray *badgeArray;
 @property (nonatomic, strong) NSMutableArray *popupButtonArray;
 @property (nonatomic, strong) NSMutableArray *popupButtonPositions;
 
@@ -59,7 +61,6 @@ static const float kSphereDamping = 0.3;
         _buttonCount = count;
         _popupButtonCount = popupCount;
         _buttonArray = [[NSMutableArray alloc] initWithCapacity:count];
-        _badgeArray = [[NSMutableArray alloc] initWithCapacity:count];
         _popupButtonArray = [[NSMutableArray alloc] initWithCapacity:popupCount];
         _popupButtonPositions = [[NSMutableArray alloc] initWithCapacity:popupCount];
         _snaps = [[NSMutableArray alloc] initWithCapacity:popupCount];
@@ -143,29 +144,6 @@ static const float kSphereDamping = 0.3;
     }
 }
 
-
-- (void)setUnreadCount:(int)unread AtIndex:(int)index {
-    
-    M13BadgeView *badge = [_badgeArray objectAtIndex:index];
-    
-    if(unread < 100) {
-        badge.hidden = NO;
-        [badge setText:[NSString stringWithFormat:@"%d", unread]];
-    }
-    else {
-        badge.hidden = NO;
-        [badge setText:@"99+"];
-    }
-    
-    UIButton *button = [_buttonArray objectAtIndex:index];
-    
-    //    NSLog(@"button.bounds = (%f, %f)", button.bounds.size.width, button.bounds.size.height);
-    badge.frame = CGRectMake(button.bounds.size.width * 0.55, button.bounds.size.height * 0.07, badge.bounds.size.width, badge.bounds.size.height);
-    
-    //    badge.frame = CGRectMake([UIScreen mainScreen].bounds.size.width -badge.bounds.size.width - 20, 48-badge.bounds.size.height/2, badge.bounds.size.width, badge.bounds.size.height);
-}
-
-
 #pragma mark Private Methods
 
 - (void)layoutView
@@ -191,14 +169,6 @@ static const float kSphereDamping = 0.3;
     segView1.backgroundColor = [UIColor colorWithWhite:211.0f/255.0f alpha:1.0f];
     [_backgroundView addSubview:segView1];
     
-//    UIView *segView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 1, self.frame.size.width, 1)];
-//    segView2.backgroundColor = [UIColor colorWithWhite:222.0f/255.0f alpha:1.0f];
-//    [_backgroundView addSubview:segView2];
-//    
-//    UIView *segView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 2, self.frame.size.width, 1)];
-//    segView3.backgroundColor = [UIColor whiteColor];
-//    [_backgroundView addSubview:segView3];
-    
     ///////////////////////////////////////
     //  按钮
     for (int i=0; i<_buttonCount; i++) {
@@ -216,15 +186,6 @@ static const float kSphereDamping = 0.3;
         [self addSubview:button];
         
         [_buttonArray addObject:button];
-        
-        //  初始小红点
-        M13BadgeView *badge = [[M13BadgeView alloc] initWithFrame:CGRectMake(0, 0, 18.0f, 18.0f)];
-        badge.font = [UIFont systemFontOfSize:13.0f];
-        badge.hidesWhenZero = YES;
-        [button addSubview:badge];
-        [_badgeArray addObject:badge];
-        
-        [self setUnreadCount:0 AtIndex:i];
     }
     
     _centerButton = [UIButton buttonWithType:UIButtonTypeCustom];

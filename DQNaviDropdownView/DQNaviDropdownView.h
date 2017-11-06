@@ -12,7 +12,7 @@
 @protocol DQNaviDropdownViewDelegate <NSObject>
 
 @required
-- (void)didClickedDropdownViewAtIndex:(int)index;
+- (void)didClickedDropdownViewAtIndex:(NSInteger)index;
 
 @end
 

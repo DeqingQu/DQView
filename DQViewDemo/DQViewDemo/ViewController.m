@@ -10,7 +10,7 @@
 #import "DQNaviDropdownView.h"
 #import "NewViewController.h"
 
-#define WAVE_BLUE                   [UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f]
+#define WAVE_BLUE   [UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f]
 
 
 @interface ViewController () <DQNaviDropdownViewDelegate, DQRefreshTableViewControllerDelegate>
@@ -60,6 +60,8 @@
     self.navigationItem.titleView = _naviView;
 
     [self refreshView];
+    
+    [self reloadTable];
 }
 
 
@@ -76,14 +78,14 @@
 
 #pragma mark DQNaviDropdownViewDelegate
 
-- (void)didClickedDropdownViewAtIndex:(int)index {
+- (void)didClickedDropdownViewAtIndex:(NSInteger)index {
     
-//    _currentTitleIndex = index;
-//
-//    [self refreshView];
-//
-//    [self showRefreshHeader:YES];
+    NSLog(@"This is index %ld", index);
     
+    [self refreshView];
+
+    [self showRefreshHeader:YES];
+    [self reloadTable];
 }
 
 #pragma mark DQRefreshTableViewControllerDelegate;
@@ -216,9 +218,7 @@
         [_membersArray addObject:[NSString stringWithFormat:@"Member No%ld", i+1]];
     }
     
-    //  刷新table
-    [self.tableView reloadData];
-    [self finishReloadingData];
+    [self reloadTable];
 }
 
 - (void)getMoreView {
@@ -230,10 +230,12 @@
         [_membersArray addObject:[NSString stringWithFormat:@"Member No%ld", i+10]];
     }
     
-    //  刷新table
+    [self reloadTable];
+}
+
+- (void)reloadTable {
     [self.tableView reloadData];
     [self finishReloadingData];
 }
-
 @end
 

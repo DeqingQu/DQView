@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"Hello, this is a new vc");
+    self.view.backgroundColor = [UIColor colorWithRed:133.0f/255.0f green:191.0f/255.0f blue:242.0f/255.0f alpha:1.0f];
 }
 
 - (void)didReceiveMemoryWarning {

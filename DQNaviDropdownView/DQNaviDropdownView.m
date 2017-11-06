@@ -215,7 +215,7 @@
     [self onButtonPressed];
     
     if (_delegate) {
-        [_delegate didClickedDropdownViewAtIndex:(int)(indexPath.row)];
+        [_delegate didClickedDropdownViewAtIndex:indexPath.row];
     }
 }
 

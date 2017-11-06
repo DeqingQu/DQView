@@ -17,10 +17,10 @@
 		FA49EDCA1FAA832900D34AC6 /* EGORefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDC31FAA832800D34AC6 /* EGORefreshTableFooterView.m */; };
 		FA49EDCB1FAA832900D34AC6 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDC51FAA832900D34AC6 /* EGORefreshTableHeaderView.m */; };
 		FA49EDCC1FAA832900D34AC6 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDC61FAA832900D34AC6 /* EGOCache.m */; };
-		FAA1DCF91FAFFB9F00EC3BD5 /* DQNaviDropdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA1DCF51FAFFB9F00EC3BD5 /* DQNaviDropdownView.m */; };
-		FAA1DCFA1FAFFB9F00EC3BD5 /* DQNaviDropdownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA1DCF61FAFFB9F00EC3BD5 /* DQNaviDropdownCell.m */; };
-		FAA1DCFD1FAFFBCB00EC3BD5 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1DCFB1FAFFBCA00EC3BD5 /* arrow_down@2x.png */; };
-		FAA1DCFE1FAFFBCB00EC3BD5 /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1DCFC1FAFFBCA00EC3BD5 /* arrow_down@3x.png */; };
+		FAA1DD041FAFFCD000EC3BD5 /* DQNaviDropdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA1DCFF1FAFFCD000EC3BD5 /* DQNaviDropdownView.m */; };
+		FAA1DD051FAFFCD000EC3BD5 /* DQNaviDropdownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA1DD011FAFFCD000EC3BD5 /* DQNaviDropdownCell.m */; };
+		FAA1DD091FAFFD0200EC3BD5 /* arrow_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1DD071FAFFD0100EC3BD5 /* arrow_down@2x.png */; };
+		FAA1DD0A1FAFFD0200EC3BD5 /* arrow_down@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAA1DD081FAFFD0200EC3BD5 /* arrow_down@3x.png */; };
 		FAEE715D1FABD91A006F9873 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEE715C1FABD91A006F9873 /* NewViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -65,13 +65,13 @@
 		FA49EDC71FAA832900D34AC6 /* EGOCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
 		FA49EDC81FAA832900D34AC6 /* EGORefreshTableFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFooterView.h; sourceTree = "<group>"; };
 		FA49EDC91FAA832900D34AC6 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
-		FAA1DCF31FAFFB9F00EC3BD5 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		FAA1DCF41FAFFB9F00EC3BD5 /* DQNaviDropdownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNaviDropdownCell.h; sourceTree = "<group>"; };
-		FAA1DCF51FAFFB9F00EC3BD5 /* DQNaviDropdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNaviDropdownView.m; sourceTree = "<group>"; };
-		FAA1DCF61FAFFB9F00EC3BD5 /* DQNaviDropdownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQNaviDropdownCell.m; sourceTree = "<group>"; };
-		FAA1DCF71FAFFB9F00EC3BD5 /* DQNaviDropdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQNaviDropdownView.h; sourceTree = "<group>"; };
-		FAA1DCFB1FAFFBCA00EC3BD5 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "DQViewDemo/images/arrow_down@2x.png"; sourceTree = "<group>"; };
-		FAA1DCFC1FAFFBCA00EC3BD5 /* arrow_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "DQViewDemo/images/arrow_down@3x.png"; sourceTree = "<group>"; };
+		FAA1DCFF1FAFFCD000EC3BD5 /* DQNaviDropdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNaviDropdownView.m; path = ../../DQNaviDropdownView.m; sourceTree = "<group>"; };
+		FAA1DD001FAFFCD000EC3BD5 /* DQNaviDropdownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNaviDropdownCell.h; path = ../../DQNaviDropdownCell.h; sourceTree = "<group>"; };
+		FAA1DD011FAFFCD000EC3BD5 /* DQNaviDropdownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DQNaviDropdownCell.m; path = ../../DQNaviDropdownCell.m; sourceTree = "<group>"; };
+		FAA1DD021FAFFCD000EC3BD5 /* DQNaviDropdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DQNaviDropdownView.h; path = ../../DQNaviDropdownView.h; sourceTree = "<group>"; };
+		FAA1DD031FAFFCD000EC3BD5 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../images; sourceTree = "<group>"; };
+		FAA1DD071FAFFD0100EC3BD5 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@2x.png"; path = "../images/arrow_down@2x.png"; sourceTree = "<group>"; };
+		FAA1DD081FAFFD0200EC3BD5 /* arrow_down@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow_down@3x.png"; path = "../images/arrow_down@3x.png"; sourceTree = "<group>"; };
 		FAEE715B1FABD91A006F9873 /* NewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
 		FAEE715C1FABD91A006F9873 /* NewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,8 +104,8 @@
 		FA49ED681FAA724100D34AC6 = {
 			isa = PBXGroup;
 			children = (
-				FAA1DCFB1FAFFBCA00EC3BD5 /* arrow_down@2x.png */,
-				FAA1DCFC1FAFFBCA00EC3BD5 /* arrow_down@3x.png */,
+				FAA1DD071FAFFD0100EC3BD5 /* arrow_down@2x.png */,
+				FAA1DD081FAFFD0200EC3BD5 /* arrow_down@3x.png */,
 				FA49ED731FAA724100D34AC6 /* DQViewDemo */,
 				FA49ED8C1FAA724100D34AC6 /* DQViewDemoTests */,
 				FA49ED971FAA724100D34AC6 /* DQViewDemoUITests */,
@@ -126,11 +126,11 @@
 		FA49ED731FAA724100D34AC6 /* DQViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FAA1DCF41FAFFB9F00EC3BD5 /* DQNaviDropdownCell.h */,
-				FAA1DCF61FAFFB9F00EC3BD5 /* DQNaviDropdownCell.m */,
-				FAA1DCF71FAFFB9F00EC3BD5 /* DQNaviDropdownView.h */,
-				FAA1DCF51FAFFB9F00EC3BD5 /* DQNaviDropdownView.m */,
-				FAA1DCF31FAFFB9F00EC3BD5 /* images */,
+				FAA1DD001FAFFCD000EC3BD5 /* DQNaviDropdownCell.h */,
+				FAA1DD011FAFFCD000EC3BD5 /* DQNaviDropdownCell.m */,
+				FAA1DD021FAFFCD000EC3BD5 /* DQNaviDropdownView.h */,
+				FAA1DCFF1FAFFCD000EC3BD5 /* DQNaviDropdownView.m */,
+				FAA1DD031FAFFCD000EC3BD5 /* images */,
 				FA49EDBE1FAA81E700D34AC6 /* DQRefreshTableViewController.h */,
 				FA49EDBF1FAA81E800D34AC6 /* DQRefreshTableViewController.m */,
 				FA49EDC71FAA832900D34AC6 /* EGOCache.h */,
@@ -277,8 +277,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAA1DCFD1FAFFBCB00EC3BD5 /* arrow_down@2x.png in Resources */,
-				FAA1DCFE1FAFFBCB00EC3BD5 /* arrow_down@3x.png in Resources */,
+				FAA1DD091FAFFD0200EC3BD5 /* arrow_down@2x.png in Resources */,
+				FAA1DD0A1FAFFD0200EC3BD5 /* arrow_down@3x.png in Resources */,
 				FA49ED7E1FAA724100D34AC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,11 +309,11 @@
 				FA49EDCA1FAA832900D34AC6 /* EGORefreshTableFooterView.m in Sources */,
 				FA49ED791FAA724100D34AC6 /* ViewController.m in Sources */,
 				FA49EDCB1FAA832900D34AC6 /* EGORefreshTableHeaderView.m in Sources */,
-				FAA1DCFA1FAFFB9F00EC3BD5 /* DQNaviDropdownCell.m in Sources */,
+				FAA1DD051FAFFCD000EC3BD5 /* DQNaviDropdownCell.m in Sources */,
 				FA49ED841FAA724100D34AC6 /* main.m in Sources */,
 				FAEE715D1FABD91A006F9873 /* NewViewController.m in Sources */,
 				FA49ED761FAA724100D34AC6 /* AppDelegate.m in Sources */,
-				FAA1DCF91FAFFB9F00EC3BD5 /* DQNaviDropdownView.m in Sources */,
+				FAA1DD041FAFFCD000EC3BD5 /* DQNaviDropdownView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

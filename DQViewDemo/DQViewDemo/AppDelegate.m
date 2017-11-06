@@ -95,6 +95,5 @@
     
     AppDelegate *appDelegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
     appDelegate.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers withTabbarImages:tabbarImages withCenterImage:@"DQ_Tabbar_center" withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
-
 }
 @end

@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DQRefreshTableViewController.h"
 
-@interface ViewController : DQRefreshTableViewController
+@interface ViewController : UIViewController
 
 @end
 

@@ -51,10 +51,9 @@ _titleArray = [[NSMutableArray alloc] initWithCapacity:0];
 [_titleArray addObject:@"Friends' Groups"];
 
 //  customize nav bar
-self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers
-    withTabbarImages:tabbarImages
-    withCenterImage:@"DQ_Tabbar_center"
-    withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
+_naviView = [[DQNaviDropdownView alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.navigationBar.bounds.size.height)
+    withDropdownArray:_titleArray];
+
 _naviView.delegate = self;
 self.navigationItem.titleView = _naviView;
 

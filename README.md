@@ -24,12 +24,20 @@ DQNaviDropdownView is a dropdown menu view. When the navigation bar is clicked, 
 ```objective-c
 
 NSArray *viewControllers = @[navVC1, navVC2, navVC3, navVC4];
-NSArray *tabbarImages = @[@"DQ_Tabbar_circle", @"DQ_Tabbar_circle_pressed", @"DQ_Tabbar_relation", @"DQ_Tabbar_relation_pressed", @"DQ_Tabbar_message", @"DQ_Tabbar_message_pressed", @"DQ_Tabbar_personal", @"DQ_Tabbar_personal_pressed"];
+NSArray *tabbarImages = @[@"DQ_Tabbar_circle", @"DQ_Tabbar_circle_pressed", @"DQ_Tabbar_relation",
+    @"DQ_Tabbar_relation_pressed", @"DQ_Tabbar_message", @"DQ_Tabbar_message_pressed",
+    @"DQ_Tabbar_personal", @"DQ_Tabbar_personal_pressed"];
 
 NSArray *popupViewControllers = @[navVC5, navVC6, navVC7];
-NSArray *popupImages = @[@"DQ_Tabbar_Popup_subscribe", @"DQ_Tabbar_Popup_subscribe_pressed", @"DQ_Tabbar_Popup_rank", @"DQ_Tabbar_Popup_rank_pressed", @"DQ_Tabbar_Popup_manager", @"DQ_Tabbar_Popup_manager_pressed"];
+NSArray *popupImages = @[@"DQ_Tabbar_Popup_subscribe", @"DQ_Tabbar_Popup_subscribe_pressed",
+    @"DQ_Tabbar_Popup_rank", @"DQ_Tabbar_Popup_rank_pressed", @"DQ_Tabbar_Popup_manager",
+    @"DQ_Tabbar_Popup_manager_pressed"];
 
-self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers withTabbarImages:tabbarImages withCenterImage:@"DQ_Tabbar_center" withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
+self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers
+    withTabbarImages:tabbarImages
+    withCenterImage:@"DQ_Tabbar_center"
+    withPopupViewControllers:popupViewControllers
+    withPopupImages:popupImages];
 
 ```
 
@@ -43,7 +51,10 @@ _titleArray = [[NSMutableArray alloc] initWithCapacity:0];
 [_titleArray addObject:@"Friends' Groups"];
 
 //  customize nav bar
-_naviView = [[DQNaviDropdownView alloc] initWithFrame:CGRectMake(0, 0, 200, self.navigationController.navigationBar.bounds.size.height)withDropdownArray:_titleArray];
+self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers
+    withTabbarImages:tabbarImages
+    withCenterImage:@"DQ_Tabbar_center"
+    withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
 _naviView.delegate = self;
 self.navigationItem.titleView = _naviView;
 

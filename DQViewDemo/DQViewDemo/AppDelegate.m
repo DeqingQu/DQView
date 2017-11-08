@@ -72,7 +72,9 @@
     UINavigationController *navVC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
 
     NSArray *viewControllers = @[navVC1, navVC2, navVC3, navVC4];
-    NSArray *tabbarImages = @[@"DQ_Tabbar_circle", @"DQ_Tabbar_circle_pressed", @"DQ_Tabbar_relation", @"DQ_Tabbar_relation_pressed", @"DQ_Tabbar_message", @"DQ_Tabbar_message_pressed", @"DQ_Tabbar_personal", @"DQ_Tabbar_personal_pressed"];
+    NSArray *tabbarImages = @[@"DQ_Tabbar_circle", @"DQ_Tabbar_circle_pressed", @"DQ_Tabbar_relation",
+                              @"DQ_Tabbar_relation_pressed", @"DQ_Tabbar_message", @"DQ_Tabbar_message_pressed",
+                              @"DQ_Tabbar_personal", @"DQ_Tabbar_personal_pressed"];
 
     UIViewController *vc5 = [[UIViewController alloc] init];
     vc5.view.backgroundColor = [UIColor whiteColor];
@@ -87,9 +89,14 @@
     UINavigationController *navVC7 = [[UINavigationController alloc] initWithRootViewController:vc7];
     
     NSArray *popupViewControllers = @[navVC5, navVC6, navVC7];
-    NSArray *popupImages = @[@"DQ_Tabbar_Popup_subscribe", @"DQ_Tabbar_Popup_subscribe_pressed", @"DQ_Tabbar_Popup_rank", @"DQ_Tabbar_Popup_rank_pressed", @"DQ_Tabbar_Popup_manager", @"DQ_Tabbar_Popup_manager_pressed"];
+    NSArray *popupImages = @[@"DQ_Tabbar_Popup_subscribe", @"DQ_Tabbar_Popup_subscribe_pressed",
+                             @"DQ_Tabbar_Popup_rank", @"DQ_Tabbar_Popup_rank_pressed",
+                             @"DQ_Tabbar_Popup_manager", @"DQ_Tabbar_Popup_manager_pressed"];
     
-    self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers withTabbarImages:tabbarImages withCenterImage:@"DQ_Tabbar_center" withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
+    self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers
+                                                                            withTabbarImages:tabbarImages
+                                                                             withCenterImage:@"DQ_Tabbar_center"
+                                                                    withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
 }
 
 @end

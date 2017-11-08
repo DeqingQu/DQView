@@ -22,13 +22,7 @@
     
     //  Initialize Window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     [self createTabbarViewController];
-    
-//    ViewController *vc = [[ViewController alloc] init];
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
-
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

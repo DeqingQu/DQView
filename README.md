@@ -52,5 +52,8 @@ In Tide, a student can chat with his friend or chat in his groups. He can post p
 Another attractive reason for students is there are so many activities in Tide. The Tide offers different kinds of activities for students, like basketball games, hiking, and karaoke competition. The club group also offers interesting activities to attract more students to join them. If you join in an activity, you can post a story with pictures to the special activity and other students who want but can’t participate in the activity can watch the stories.
 
 <h3 align="center">
-  <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mainpage.PNG" alt="Example Chart 1" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/relation.PNG" alt="Example Chart 2" width="260"/>  <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/chatting.PNG" alt="Example Chart 3" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mypage.PNG" alt="Example Chart 4" width="260"/>
+  <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mainpage.png" alt="Example Chart 1" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mypage.png" alt="Example Chart 2" width="260"/></h3>  
+  
+<h3 align="center">
+<img src="https://github.com/DeqingQu/DQView/blob/master/Screens/chatting.png" alt="Example Chart 3" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/relation.png" alt="Example Chart 4" width="260"/>
 </h3>

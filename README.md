@@ -50,3 +50,7 @@ The group can be a class group, like CS321 class group, or can be a club group, 
 In Tide, a student can chat with his friend or chat in his groups. He can post pictures to record his life and specify who can follow these posts, a friend or group members. The coolest thing in Tide is that one group can join with another group and group members can chat with each other temporarily. It offers an opportunity to contact with a group of students who have the same interests.
 
 Another attractive reason for students is there are so many activities in Tide. The Tide offers different kinds of activities for students, like basketball games, hiking, and karaoke competition. The club group also offers interesting activities to attract more students to join them. If you join in an activity, you can post a story with pictures to the special activity and other students who want but can’t participate in the activity can watch the stories.
+
+<h3 align="center">
+  <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mainpage.PNG" alt="Example Chart 1" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/relation.PNG" alt="Example Chart 2" width="260"/>  <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/chatting.PNG" alt="Example Chart 3" width="260"/>    <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mypage.PNG" alt="Example Chart 4" width="260"/>
+</h3>

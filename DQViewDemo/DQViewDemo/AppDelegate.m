@@ -60,11 +60,11 @@
     UINavigationController *navVC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     
     UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor blueColor];
+    vc2.view.backgroundColor = [UIColor whiteColor];
     UINavigationController *navVC2 = [[UINavigationController alloc] initWithRootViewController:vc2];
 
     UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor grayColor];
+    vc3.view.backgroundColor = [UIColor whiteColor];
     UINavigationController *navVC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
 
     UIViewController *vc4 = [[UIViewController alloc] init];

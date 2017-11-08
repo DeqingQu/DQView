@@ -20,12 +20,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //  初始化Window
+    //  Initialize Window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    
     [self createTabbarViewController];
+    
+//    ViewController *vc = [[ViewController alloc] init];
+//    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
+
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -59,8 +62,7 @@
 
 - (void)createTabbarViewController {
     
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.view.backgroundColor = [UIColor redColor];
+    ViewController *vc1 = [[ViewController alloc] init];
     UINavigationController *navVC1 = [[UINavigationController alloc] initWithRootViewController:vc1];
     
     UIViewController *vc2 = [[UIViewController alloc] init];
@@ -72,14 +74,14 @@
     UINavigationController *navVC3 = [[UINavigationController alloc] initWithRootViewController:vc3];
 
     UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = [UIColor whiteColor];
+    vc4.view.backgroundColor = [UIColor blackColor];
     UINavigationController *navVC4 = [[UINavigationController alloc] initWithRootViewController:vc4];
 
     NSArray *viewControllers = @[navVC1, navVC2, navVC3, navVC4];
     NSArray *tabbarImages = @[@"DQ_Tabbar_circle", @"DQ_Tabbar_circle_pressed", @"DQ_Tabbar_relation", @"DQ_Tabbar_relation_pressed", @"DQ_Tabbar_message", @"DQ_Tabbar_message_pressed", @"DQ_Tabbar_personal", @"DQ_Tabbar_personal_pressed"];
 
     UIViewController *vc5 = [[UIViewController alloc] init];
-    vc5.view.backgroundColor = [UIColor blackColor];
+    vc5.view.backgroundColor = [UIColor whiteColor];
     UINavigationController *navVC5 = [[UINavigationController alloc] initWithRootViewController:vc5];
 
     UIViewController *vc6 = [[UIViewController alloc] init];
@@ -93,7 +95,7 @@
     NSArray *popupViewControllers = @[navVC5, navVC6, navVC7];
     NSArray *popupImages = @[@"DQ_Tabbar_Popup_subscribe", @"DQ_Tabbar_Popup_subscribe_pressed", @"DQ_Tabbar_Popup_rank", @"DQ_Tabbar_Popup_rank_pressed", @"DQ_Tabbar_Popup_manager", @"DQ_Tabbar_Popup_manager_pressed"];
     
-    AppDelegate *appDelegate = (AppDelegate *)([UIApplication sharedApplication].delegate);
-    appDelegate.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers withTabbarImages:tabbarImages withCenterImage:@"DQ_Tabbar_center" withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
+    self.window.rootViewController = [[DQTabbarViewController alloc] initWithViewControllers:viewControllers withTabbarImages:tabbarImages withCenterImage:@"DQ_Tabbar_center" withPopupViewControllers:popupViewControllers withPopupImages:popupImages];
 }
+
 @end

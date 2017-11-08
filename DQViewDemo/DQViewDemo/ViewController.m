@@ -17,8 +17,6 @@
 @property (nonatomic, strong) DQNaviDropdownView *naviView;
 
 @property (nonatomic, strong) NSMutableArray *titleArray;
-@property (nonatomic, strong) NSMutableArray *membersArray;
-@property (nonatomic, strong) NSMutableArray *createrArray;
 
 @end
 
@@ -27,20 +25,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-    //  delegate and other setup
     
     //  Model Init
     _titleArray = [[NSMutableArray alloc] initWithCapacity:0];
     [_titleArray addObject:@"All Groups"];
-    [_titleArray addObject:@"My"];
-    [_titleArray addObject:@"Friends"];
-    
-    _membersArray = [[NSMutableArray alloc] initWithCapacity:0];
-    _createrArray = [[NSMutableArray alloc] initWithCapacity:0];
+    [_titleArray addObject:@"My Groups"];
+    [_titleArray addObject:@"Friends' Groups"];
     
     //  View Init
     self.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTintColor:WAVE_BLUE];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObject:WAVE_BLUE forKey:NSForegroundColorAttributeName]];
     
     //  customize nav bar
@@ -63,7 +58,19 @@
 
 - (void)didClickedDropdownViewAtIndex:(NSInteger)index {
     
-    NSLog(@"This is index %ld", index);
+    switch (index) {
+        case 0:
+            self.view.backgroundColor = [UIColor whiteColor];
+            break;
+        case 1:
+            self.view.backgroundColor = [UIColor lightGrayColor];
+            break;
+        case 2:
+            self.view.backgroundColor = [UIColor darkGrayColor];
+            break;
+        default:
+            break;
+    }
 }
 @end
 

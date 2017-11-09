@@ -1,5 +1,5 @@
 # DQView
-DQView are reusable view components for iOS development which I used in Tide project.
+DQView are reusable view components for iOS development which I used in Rising project.
 
 Including:
 * DQTabbarViewController - a tab container which can fold and unfold tab button. 
@@ -66,13 +66,13 @@ self.navigationItem.titleView = _naviView;
 ## Author
 DQView is open-sourced by [Deqing Qu](http://people.oregonstate.edu/~qud/).
 
-## More information about Tide project
-Tide is a social app for students in university. Students can join different kinds of groups in Tide. 
+## More information about Rising project
+Rising is a social app for students in university. Students can join different kinds of groups in Rising.
 The group can be a class group, like CS321 class group, or can be a club group, like tennis club group. Students also can create their own groups by inviting other students who have the same interests.
 
-In Tide, a student can chat with his friend or chat in his groups. He can post pictures to record his life and specify who can follow these posts, a friend or group members. The coolest thing in Tide is that one group can join with another group and group members can chat with each other temporarily. It offers an opportunity to contact with a group of students who have the same interests.
+In Rising, a student can chat with his friend or chat in his groups. He can post pictures to record his life and specify who can follow these posts, a friend or group members. The coolest thing in Rising is that one group can join with another group and group members can chat with each other temporarily. It offers an opportunity to contact with a group of students who have the same interests.
 
-Another attractive reason for students is there are so many activities in Tide. The Tide offers different kinds of activities for students, like basketball games, hiking, and karaoke competition. The club group also offers interesting activities to attract more students to join them. If you join in an activity, you can post a story with pictures to the special activity and other students who want but can’t participate in the activity can watch the stories.
+Another attractive reason for students is there are so many activities in Rising. The Rising offers different kinds of activities for students, like basketball games, hiking, and karaoke competition. The club group also offers interesting activities to attract more students to join them. If you join in an activity, you can post a story with pictures to the special activity and other students who want but can’t participate in the activity can watch the stories.
 
 <h3 align="center">
   <img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mainpage.png" alt="Example Chart 1" width="260"/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/DeqingQu/DQView/blob/master/Screens/mypage.png" alt="Example Chart 2" width="260"/></h3>
